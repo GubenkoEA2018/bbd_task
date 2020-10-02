@@ -1,3 +1,25 @@
+Dev web skills exam
+
+Duration: 2 Hours.
+
+The purpose of this exam is to check your web programming skills, so try to touch as many topics as you could in the given time.
+
+Request: 
+Create a web page that will display a grid that shows the summary of a shopping cart.
+The grid will contain the following columns:
+Product Name, Product Description, Unit Price, Quantity, Total Price
+The summary of the Total Price will be displayed at the bottom of the grid.
+The user will have an option to add a new product, the product will be added to the grid and the total price will change respectively.
+
+Use a json object to define the initial cart state. The json will contain 2 products.
+
+The page needs to have a nice UI.
+
+Feel free to use any framework. 
+
+Good Luck
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
