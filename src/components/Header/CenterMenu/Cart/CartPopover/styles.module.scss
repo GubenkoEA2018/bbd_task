@@ -1,0 +1,26 @@
+@import '../../../../../css/variables';
+
+.Wrapper {
+  color: $darkBlue;
+  .Top {
+    border-bottom: 1px solid $e1;
+    padding: 25px 15px 10px 15px;
+    max-height: 400px;
+    overflow: auto;
+
+    .CartEmpty {
+    }
+  }
+
+  .Table {
+    display: table;
+    width: 100%;
+    .Orders {
+      margin-bottom: 15px;
+    }
+  }
+
+  .Bottom {
+    padding: 25px 15px;
+  }
+}

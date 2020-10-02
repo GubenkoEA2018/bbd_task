@@ -1,0 +1,17 @@
+@import '../../../css/variables.scss';
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 43.83px;
+  color: $darkBlue;
+}
+
+.icons {
+  margin-right: 24px;
+  cursor: pointer;
+  &:hover path {
+    fill: $darkRed;
+  }
+}

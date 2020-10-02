@@ -1,0 +1,68 @@
+@import 'reset.css';
+@import 'form-reset.css';
+@import 'fonts.css';
+@import 'variables';
+@import 'router-animation';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none !important;
+
+  &:focus {
+    outline: none !important;
+  }
+
+  &:active {
+    outline: none !important;
+  }
+}
+
+button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none !important;
+
+  &:focus {
+    outline: none !important;
+  }
+
+  &:active {
+    outline: none !important;
+  }
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $darkBlue;
+}
+
+div[id='root'] {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  // border: 1px solid purple;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1230px;
+  }
+}

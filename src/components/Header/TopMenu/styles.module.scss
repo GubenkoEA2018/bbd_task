@@ -1,0 +1,91 @@
+@import '../../../css/variables';
+
+.TopMenu {
+  width: 100%;
+  border-bottom: 1px solid $e6;
+  background-color: #fff;
+
+  .Wrapper {
+    @include flexCentered;
+    height: 40px;
+
+    .LeftMenu {
+      display: flex;
+      height: 100%;
+      .City,
+      .LinkWrapper {
+        @include hoverCentered;
+      }
+      .City {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: $darkRed;
+        cursor: pointer;
+        p {
+          margin-left: 5px;
+        }
+      }
+      .LinkWrapper {
+        .Link {
+          @include flexCentered;
+          width: 100%;
+          height: 100%;
+          font-size: 14px;
+          letter-spacing: 0.15px;
+          color: $darkBlue;
+        }
+        .Phone {
+          .LinkToCall {
+            font-weight: bold;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: $darkRed;
+            cursor: pointer;
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+
+    .Restock {
+      @include hoverCentered;
+      font-weight: bold;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: $darkRed;
+      height: 100%;
+      p {
+        margin-left: 5px;
+      }
+    }
+
+    .RightMenu {
+      display: flex;
+      height: 100%;
+      font-size: 14px;
+      color: $darkBlue;
+      .Remains,
+      .Balance {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 15px;
+        .Red {
+          font-weight: 500;
+          color: $darkRed;
+          margin-left: 5px;
+        }
+        &.Clickable:hover {
+          @include hoverCentered;
+        }
+      }
+      .BottleIcon {
+        margin-right: 7.75px;
+      }
+      .WalletIcon {
+        margin-right: 7px;
+      }
+    }
+  }
+}

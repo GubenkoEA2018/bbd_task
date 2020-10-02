@@ -1,0 +1,19 @@
+.Wrapper {
+  padding: 25px 25px;
+
+  .Top {
+    display: flex;
+    max-width: 380px;
+    overflow-x: auto;
+    overscroll-behavior-x: none;
+    padding-bottom: 5px;
+    p {
+      line-height: 25px;
+      font-weight: 500;
+    }
+  }
+
+  .Bottom {
+    margin-top: 10px;
+  }
+}

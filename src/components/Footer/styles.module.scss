@@ -1,0 +1,23 @@
+@import '../../css/variables.scss';
+
+.wrap {
+  width: 100%;
+  background-color: $lightGray;
+  margin-top: 37px;
+  flex: 1;
+}
+
+.container {
+  height: 336px;
+  margin-top: 37px;
+  padding-top: 41.33px;
+  font-weight: 400;
+  font-size: 14px;
+  color: $darkBlue;
+  white-space: nowrap;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}

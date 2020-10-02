@@ -1,0 +1,62 @@
+$darkBlue: #1f2d51;
+$e1: #e1e1e1;
+$darkRed: #ab387d;
+$darkGray: #808080;
+$e0: #e0e0e0;
+$blueGray: #858ea4;
+$lightBlue: #8fbce5;
+$e6: #e6e7e8;
+$f6: #f6f6f6;
+$pink: #f19fb8;
+$green: #a8d04c;
+$lightGray: #fcfcfc;
+$darkBlueHover: #0b1736;
+$error: #d04049;
+
+@mixin hoverCentered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  cursor: pointer;
+  &:hover {
+    background-color: $f6;
+  }
+}
+
+@mixin flexCentered {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin limitTextVertical {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin title {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@mixin pageTitle {
+  @include title;
+  margin-top: 10px;
+}
+
+@mixin pageWrapper {
+  width: 100%;
+  margin-top: 30px;
+}
+
+@mixin sectionTitle {
+  font-weight: bold;
+  line-height: 19px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}

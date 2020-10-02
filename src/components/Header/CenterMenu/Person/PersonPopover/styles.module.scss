@@ -1,0 +1,42 @@
+@import '../../../../../css/variables';
+
+.Wrapper {
+  font-size: 14px;
+  color: $darkBlue;
+  width: 250px;
+  min-width: 250px;
+  .Top,
+  .Bottom {
+    padding: 25px 15px;
+  }
+  .Top {
+    border-bottom: 1px solid $e1;
+    .TopNotAuth {
+      font-size: 16px;
+      line-height: 25px;
+      font-weight: 500;
+    }
+    .Orders {
+      margin-bottom: 15px;
+    }
+  }
+  .Bottom {
+    .FromGroup {
+      .Label {
+        font-weight: bold;
+        font-size: 10px;
+        text-transform: uppercase;
+        color: $blueGray;
+      }
+
+      .TextFieldWrapper {
+        margin-top: 5px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .activeLink:hover {
+    color: $darkRed;
+    cursor: pointer;
+  }
+}

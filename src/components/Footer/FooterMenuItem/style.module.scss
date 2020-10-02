@@ -1,0 +1,37 @@
+@import '../../../css/variables.scss';
+
+.menu {
+  width: 180px;
+  font-weight: 400;
+  font-size: 14px;
+  color: $darkBlue;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.text {
+  margin-bottom: 15px;
+}
+
+.linkText {
+  white-space: initial;
+  line-height: 20px;
+}
+
+.activeLink {
+  margin-bottom: 15px;
+  & p:not(:last-of-type) {
+    margin-bottom: 5px;
+  }
+  &:hover {
+    color: $darkRed;
+    cursor: pointer;
+  }
+}

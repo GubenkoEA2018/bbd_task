@@ -1,0 +1,23 @@
+@import '../../../css/variables.scss';
+
+.content {
+  margin-top: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: $darkBlue;
+}
+
+.year {
+  font-weight: 500;
+  font-size: 14px;
+  color: $darkBlue;
+  margin-left: 3px;
+  margin-right: 3px;
+}
