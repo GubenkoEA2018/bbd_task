@@ -4,10 +4,8 @@ import React, { FC, ReactElement } from 'react';
 // Dialogs
 import { LoginDialog } from '../Login';
 import { CartDialog } from '../Cart';
-import { PolicyDialog } from '../Policy';
 import { AddressDialog } from '../Address';
 import { DeleteDialog } from '../Delete';
-import { AgreeDialog } from '../Agree';
 import { RefillDialog } from '../Refill';
 import { DivergenceDialog } from '../Divergence';
 
@@ -40,16 +38,6 @@ export const RootDialog: FC = (): ReactElement => {
         product={modalProps as PublishedProduct}
         open={modalType === Modals.Cart}
         onClose={close}
-      />
-      <PolicyDialog
-        open={modalType === Modals.Policy}
-        onClose={close}
-        scroll="body"
-      />
-      <AgreeDialog
-        open={modalType === Modals.Agree}
-        onClose={close}
-        scroll="body"
       />
       <RefillDialog open={modalType === Modals.Refill} onClose={close} />
       <DivergenceDialog

@@ -12,7 +12,7 @@ export const Favourite: FC = (): ReactElement => {
       <div className={styles.RightControlWrapper} onClick={handleOpen}>
         <div className={styles.RightControl}>
           <FavouriteIcon />
-          <p>Избранное</p>
+          <p>Favorite</p>
         </div>
       </div>
       <Popover>

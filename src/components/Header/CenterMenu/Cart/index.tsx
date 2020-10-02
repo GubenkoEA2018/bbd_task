@@ -40,7 +40,7 @@ export const Cart: FC = (): ReactElement => {
             <CartIcon />
           </Badge>
 
-          <p>Корзина</p>
+          <p>Basket</p>
         </div>
       </div>
 

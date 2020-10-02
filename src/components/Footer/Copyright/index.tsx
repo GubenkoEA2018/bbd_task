@@ -7,7 +7,7 @@ export const Copyright: FC = (): ReactElement => {
     <div className={styles.content}>
       <CopyrightIcon style={{ fontSize: 14 }} />
       <div className={styles.year}>{new Date().getFullYear()}</div>
-      <p className={styles.text}>Королевская вода. Все права защищены.</p>
+      <p className={styles.text}>XXX. All rights reserved.</p>
     </div>
   );
 };

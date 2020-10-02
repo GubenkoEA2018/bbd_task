@@ -51,7 +51,7 @@ export const PersonPopover: FC<PersonPopoverProps> = ({
               className={`${styles.Orders} ${styles.activeLink}`}
               onClick={handleClose}
             >
-              Личный кабинет
+              Personal Area
             </p>
           </Link>
           <Link to="/order">
@@ -59,7 +59,7 @@ export const PersonPopover: FC<PersonPopoverProps> = ({
               className={`${styles.Orders} ${styles.activeLink}`}
               onClick={handleClose}
             >
-              Заказы
+              Orders
             </p>
           </Link>
           <Link to="/favorite">
@@ -67,7 +67,7 @@ export const PersonPopover: FC<PersonPopoverProps> = ({
               className={`${styles.Orders} ${styles.activeLink}`}
               onClick={handleClose}
             >
-              Избранные товары
+              Favourite products
             </p>
           </Link>
         </div>
@@ -82,7 +82,7 @@ export const PersonPopover: FC<PersonPopoverProps> = ({
           {/* </div> */}
 
           <Button fullWidth bgColor="darkBlue" onClick={handleLogout}>
-            выйти
+            Log out
           </Button>
         </div>
       </>
@@ -90,12 +90,12 @@ export const PersonPopover: FC<PersonPopoverProps> = ({
       <>
         <div className={styles.Top}>
           <p className={styles.TopNotAuth}>
-            Войдите или создайте учетную запись
+            Log in or create account
           </p>
         </div>
         <div className={styles.Bottom}>
           <Button fullWidth bgColor="darkBlue" onClick={handleLoginButtonClick}>
-            вход
+            Log in
           </Button>
         </div>
       </>

@@ -169,7 +169,7 @@ export const SearchBar: FC<SearchBarProps> = (): ReactElement => {
           <InputBase
             className={classes.input}
             {...getInputProps()}
-            placeholder="Искать товары"
+            placeholder="Search products"
             onChange={handleSearch}
             value={searchValue}
             onKeyPress={(e: KeyboardEvent<HTMLInputElement>): void => {

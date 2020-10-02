@@ -1,7 +1,7 @@
 import React, { FC, ReactElement } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './CenterMenu.module.scss';
-import logo from '../../../assets/images/center-menu/logo.png';
+import logo from '../../../assets/images/center-menu/shopping.png';
 import { Person } from './Person';
 import { Favourite } from './Favourite';
 import { Cart } from './Cart';

@@ -49,19 +49,19 @@ export const TopMenu: FC = (): ReactElement => {
           {/* </div> */}
           <div className={styles.LinkWrapper}>
             <Link className={styles.Link} to="/delivery">
-              Доставка и оплата
+              Delivery and payment
             </Link>
           </div>
           <div className={styles.LinkWrapper}>
             <Link className={styles.Link} to="/contacts">
-              Контакты
+              Contacts
             </Link>
           </div>
           <div className={styles.LinkWrapper}>
             <div className={styles.Phone}>
               <PhoneIcon />
-              <a href="tel:+74951145555" className={styles.LinkToCall}>
-                +7(495)114-55-55
+              <a href="tel:+xxxxxxxxxxx" className={styles.LinkToCall}>
+                +(xxx)-xx-xxx-xxxx
               </a>
             </div>
           </div>

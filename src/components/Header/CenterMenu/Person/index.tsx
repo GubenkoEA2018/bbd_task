@@ -9,7 +9,7 @@ export const Person: FC = (): ReactElement => {
 
   const { user } = useUser();
 
-  let userLabel = 'Профиль';
+  let userLabel = 'Profile';
 
   if (user?.firstName) {
     userLabel = user.firstName;

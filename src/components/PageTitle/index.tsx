@@ -27,7 +27,7 @@ export const PageTitle: FC<PageTitleProps> = ({
       <div>
         <Breadcrumbs>
           <Link to="/" className={styles.TdUnderline}>
-            <p>Главная</p>
+            <p>Main Page</p>
           </Link>
 
           {links && links.length

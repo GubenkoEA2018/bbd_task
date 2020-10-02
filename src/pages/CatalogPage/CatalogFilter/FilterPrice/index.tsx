@@ -157,7 +157,7 @@ export const FilterPrice: FC<FilterPriceProps> = ({
         <div className={styles.PriceField}>
           <PriceInput
             name="min"
-            rangeLabel="От"
+            rangeLabel="From"
             onBlur={
               handlePriceInputChange as (
                 e: FocusEvent<HTMLInputElement>,
@@ -169,7 +169,7 @@ export const FilterPrice: FC<FilterPriceProps> = ({
         <div className={styles.PriceField}>
           <PriceInput
             name="max"
-            rangeLabel="До"
+            rangeLabel="to"
             onBlur={
               handlePriceInputChange as (
                 e: FocusEvent<HTMLInputElement>,

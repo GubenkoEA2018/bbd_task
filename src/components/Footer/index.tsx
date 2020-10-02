@@ -18,22 +18,22 @@ export const Footer: FC = (): ReactElement => {
   const profileMenu: FooterMenuItemProps =
     apikey !== null && userId !== null
       ? {
-          title: 'Личный кабинет',
+          title: 'Personal Area',
           links: [
             {
               link: '/profile',
-              label: 'Личный кабинет',
+              label: 'Profile',
             },
           ],
         }
       : {
-          title: 'Личный кабинет',
+          title: 'Person Area',
           links: [
             {
               link: (): void => {
                 open(Modals.Login);
               },
-              label: 'Войти',
+              label: 'Log in',
             },
           ],
         };
@@ -41,40 +41,40 @@ export const Footer: FC = (): ReactElement => {
   const menuItemList: FooterMenuItemProps[] = [
     profileMenu,
     {
-      title: 'Покупательский сервис',
+      title: 'Service',
       links: [
         {
           link: '/order',
-          label: 'Заказы',
+          label: 'Orders',
         },
         {
           link: '/delivery',
-          label: 'Доставка и оплата',
+          label: 'Delivery and payment',
         },
       ],
     },
     {
-      title: 'Контакты',
+      title: 'Contacts',
       links: [
         {
           link: null,
-          label: 'г. Москва, ул. Дубининская д.61',
+          label: 'City, Street, House',
         },
         {
           link: '/contacts',
-          label: 'Посмотреть на карте',
+          label: 'Look for a map',
         },
         {
           link: null,
-          label: '+7 (495)114-5555',
+          label: '+(xxx) xx-xxx-xxxx',
         },
         {
           link: null,
-          label: 'Пн-Вс 9.00 - 18.00',
+          label: '24/7',
         },
         {
           link: null,
-          label: 'sokolov@kingswater.ru',
+          label: 'xxx@xxxxx.xxx',
         },
       ],
     },

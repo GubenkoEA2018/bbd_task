@@ -85,7 +85,7 @@ export const CatalogList: FC<CatalogListProps> = ({
     }
   }, [page]);
 
-  let content: ReactElement | ReactElement[] | null = <p>Товаров нет</p>;
+  let content: ReactElement | ReactElement[] | null = <p>Products not found</p>;
   if (products && products.length) {
     content = products.map((product, idx) => {
       const { id } = product;
