@@ -12,26 +12,26 @@ import { useScrollToTop, useInit } from './hooks';
 // Config
 import { configureToast } from './services/toast';
 import { Backdrop } from './components/ui/Backdrop';
-import Routes from './routes/Routes';
+import CatalogPage from "./pages/CatalogPage";
 
 configureToast();
 
 export const App: FC = (): ReactElement => {
-    useScrollToTop();
-    // Init store data from localstorage
-    const { loading, isInit } = useInit();
+  useScrollToTop();
+  // Init store data from localstorage
+  const { loading, isInit } = useInit();
 
-    return (
-        <>
-            <Header />
+  return (
+    <>
+      <Header />
 
-            {isInit && <Routes />}
+     <CatalogPage />
 
-            <Footer />
+      <Footer />
 
-            <RootDialog />
+      <RootDialog />
 
-            <Backdrop open={Boolean(loading)} />
-        </>
-    );
+      <Backdrop open={Boolean(loading)} />
+    </>
+  );
 };

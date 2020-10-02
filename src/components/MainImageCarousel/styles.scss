@@ -1,0 +1,29 @@
+@import '../../css/variables.scss';
+
+.MainCarouselDots {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  li {
+    width: auto;
+    height: auto;
+    &:not(:last-of-type) {
+      margin-right: 5px;
+    }
+    &.slick-active .MainCarouselDot {
+      background-color: $darkRed;
+    }
+  }
+}
+
+.MainCarouselDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: $e0;
+}

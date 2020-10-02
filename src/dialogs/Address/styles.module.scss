@@ -1,0 +1,59 @@
+@import '../../css/variables';
+
+.Wrapper {
+  margin-top: 0;
+
+  .ButtonsWrapper {
+    @include flexCentered;
+    margin-top: 30px;
+    width: 100%;
+    .ButtonWrapper {
+      width: 265px;
+    }
+  }
+}
+
+.CheckboxWrapper {
+  display: flex;
+  position: relative;
+
+  .CheckboxLabel {
+    position: absolute;
+    top: 7px;
+    left: 30px;
+    font-size: 16px;
+    line-height: 18px;
+    color: $darkBlue;
+    cursor: pointer;
+  }
+}
+
+.SearchList {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  list-style: none;
+  background-color: #fff;
+  overflow: auto;
+  max-height: 200px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  //overscroll-behavior: none;
+  & li {
+    padding: 10px;
+    font-size: 13px;
+  }
+  & li[data-focus='true'] {
+    background-color: $darkRed;
+    color: white;
+    cursor: pointer;
+  }
+  & li:active {
+    background-color: $darkRed;
+    color: white;
+  }
+}

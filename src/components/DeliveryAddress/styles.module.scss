@@ -1,0 +1,148 @@
+@import '../../css/variables';
+
+.Wrapper {
+  .List {
+    margin-bottom: 15px;
+
+    .Item {
+      width: 100%;
+      border: 1px solid $e1;
+      border-radius: 4px;
+      padding: 20px 15px;
+
+      &:not(:first-of-type) {
+        margin-top: 10px;
+      }
+
+      .Top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        font-size: 18px;
+
+        .Choose {
+          display: flex;
+          align-items: center;
+
+          .ChooseIcon {
+          }
+
+          .ChooseLabel {
+            margin-left: 5px;
+          }
+        }
+
+        .AddressName {
+          text-transform: uppercase;
+        }
+
+        .BottleLeft {
+          font-weight: bold;
+          font-size: 18px;
+          color: $darkRed;
+        }
+      }
+
+      .Center {
+        margin-top: 15px;
+        font-size: 18px;
+        line-height: 21px;
+
+        .AddressCurrent {
+          width: 100%;
+        }
+
+        .AddressComment {
+          color: $blueGray;
+          margin-top: 5px;
+        }
+
+        .AddressTara {
+          font-size: 14px;
+          &:not(:last-of-type) {
+            margin-top: 5px;
+          }
+        }
+      }
+
+      .Bottom {
+        margin-top: 10px;
+        font-size: 13px;
+        color: $blueGray;
+        display: flex;
+        justify-content: flex-end;
+
+        .Control {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          .ControlIcon {
+            width: 9px;
+            height: 9px;
+          }
+
+          .ControlLabel {
+            margin-left: 5px;
+            text-transform: capitalize;
+          }
+
+          &:not(:first-of-type) {
+            margin-left: 20px;
+          }
+
+          &:hover {
+            color: $darkRed;
+            .ControlIcon path {
+              fill: $darkRed;
+            }
+          }
+        }
+      }
+
+      &.ItemSelectable {
+        cursor: pointer;
+        .Top .Choose {
+          cursor: pointer;
+          &:hover {
+            color: $darkRed;
+            .ChooseIcon path {
+              fill: $darkRed;
+            }
+          }
+        }
+      }
+
+      &.ItemActive {
+        border-color: $darkRed;
+        .Top .Choose {
+          .ChooseIcon path {
+            fill: $darkRed;
+          }
+          .ChooseLabel {
+            color: $darkRed;
+          }
+        }
+      }
+    }
+  }
+
+  .AddButton {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $darkRed;
+    cursor: pointer;
+
+    .Icon {
+      width: 14px;
+      height: 14px;
+    }
+
+    .Label {
+      margin-left: 5px;
+    }
+  }
+}

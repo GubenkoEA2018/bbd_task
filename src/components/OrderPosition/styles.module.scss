@@ -1,0 +1,17 @@
+@import '../../css/variables';
+
+.Position {
+  padding: 20px 0;
+  line-height: 24px;
+  &:not(:first-of-type) {
+    border-top: 1px solid $e6;
+  }
+
+  .PositionName {
+    color: $darkRed;
+  }
+
+  .PositionInfo {
+    text-align: right;
+  }
+}

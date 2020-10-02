@@ -1,0 +1,94 @@
+@import '../../css/variables.scss';
+
+.ButtonsWrapper {
+  @include flexCentered;
+  margin-top: 10px;
+  width: 100%;
+  .ButtonWrapper {
+    width: 265px;
+  }
+}
+
+.Title {
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+  margin: 20px 0 20px 0;
+}
+
+.PaymentTypeWrapper {
+  margin-top: 20px;
+}
+
+.GoodsWrapper {
+  margin-top: 25px;
+  .GoodsList {
+    margin-top: 15px;
+  }
+}
+
+.TaraWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .ImageWrapper {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .Image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .NameWrapper {
+    .Name {
+      font-size: 18px;
+      line-height: 24px;
+      width: 100%;
+      cursor: pointer;
+      @include limitTextVertical;
+    }
+  }
+
+  .Info {
+    margin-left: 55px;
+
+    .Price {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      margin-top: 5px;
+      .Value {
+        font-weight: bold;
+        font-size: 18px;
+        &.ValueRed {
+          color: $darkRed;
+        }
+      }
+      .Sign {
+        margin-left: 5px;
+        font-size: 15px;
+      }
+    }
+    .Description {
+      margin-top: 5px;
+      line-height: 21px;
+
+      @include limitTextVertical;
+    }
+  }
+}
+
+.TotalWrapper {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+}

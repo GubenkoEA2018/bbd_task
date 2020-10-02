@@ -1,0 +1,22 @@
+@import '../../../../css/variables';
+
+.TitleWrapper {
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-bottom: 1px solid $e1;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  .TitleText {
+  }
+  .Reset {
+    font-size: 10px;
+    font-weight: normal;
+    color: $blueGray;
+    cursor: pointer;
+    &:hover {
+      color: $darkRed;
+    }
+  }
+}

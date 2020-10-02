@@ -1,0 +1,30 @@
+@import '../../css/variables.scss';
+
+.Wrapper {
+  @include pageWrapper;
+
+  .CartPage {
+    .Content {
+      margin-top: 15px;
+      display: flex;
+
+      .ListWrapper {
+        display: flex;
+        flex-direction: column;
+        .List {
+        }
+      }
+
+      .OrderInfoWrapper {
+        margin-top: 40px;
+        margin-left: 80px;
+      }
+      .NotAllowedMessage {
+        margin-top: 10px;
+        font-size: 13px;
+        line-height: 16px;
+        color: $darkRed;
+      }
+    }
+  }
+}

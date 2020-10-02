@@ -1,0 +1,101 @@
+@import '../../css/variables';
+
+.FormWrapper {
+  width: 550px;
+  margin-top: 20px;
+
+  .SectionTitle {
+    @include sectionTitle;
+  }
+
+  .FormGroup {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    &:not(:first-of-type) {
+      margin-top: 10px;
+    }
+
+    .FormLabel {
+      margin-top: 10px;
+      color: $darkBlue;
+      position: relative;
+      &.FormRequired:after {
+        content: '*';
+        position: absolute;
+        right: -11px;
+        top: -3px;
+        color: $darkRed;
+        font-size: 18px;
+      }
+    }
+
+    .FormControl {
+      width: 360px;
+    }
+  }
+
+  .ButtonRow {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    .ButtonWrapper {
+      width: 360px;
+    }
+  }
+
+  .FormDivider {
+    margin-top: 30px;
+  }
+
+  .FormGroupRow {
+    @include flexCentered;
+    align-items: flex-start;
+    &:not(:first-of-type) {
+      margin-top: 20px;
+    }
+
+    .FormGroupColumn {
+      .FormGroupColumnLabel {
+        color: $blueGray;
+        margin-bottom: 5px;
+      }
+    }
+
+    .FormGroupColumnControlLarge {
+      width: 360px;
+    }
+    .FormGroupColumnControlMedium {
+      width: 265px;
+    }
+    .FormGroupColumnControlSmall {
+      width: 170px;
+    }
+  }
+
+  .SmsCodeMessage {
+    font-size: 14px;
+    letter-spacing: 0.15px;
+    color: $blueGray;
+    text-align: center;
+    width: 100%;
+    margin-top: 5px;
+  }
+}
+
+.CheckboxWrapper {
+  margin-top: 20px;
+  display: flex;
+  position: relative;
+  .CheckboxLabel {
+    position: absolute;
+    top: 7px;
+    left: 30px;
+    font-size: 14px;
+    line-height: 19px;
+    span {
+      color: $darkRed;
+      cursor: pointer;
+    }
+  }
+}

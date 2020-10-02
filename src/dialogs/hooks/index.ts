@@ -1,0 +1,1 @@
+export { useModalManage } from './useModalManage';

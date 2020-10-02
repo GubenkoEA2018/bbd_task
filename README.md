@@ -1,6 +1,6 @@
 Dev web skills exam
 
-Duration: 2 Hours.
+Duration: 3 Hours.
 
 The purpose of this exam is to check your web programming skills, so try to touch as many topics as you could in the given time.
 

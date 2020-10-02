@@ -1,0 +1,19 @@
+.PriceFieldsWrapper {
+  margin-top: 15px;
+  display: flex;
+  .PriceField {
+    width: 96px;
+    max-width: 96px;
+    min-width: 96px;
+    &:nth-of-type(2) {
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+}
+
+.PriceRangeWrapper {
+  width: 100%;
+  margin-top: 15px;
+  padding: 0 9px;
+}

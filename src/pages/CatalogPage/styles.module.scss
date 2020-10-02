@@ -1,0 +1,33 @@
+@import '../../css/variables.scss';
+
+.PageWrapper {
+  @include pageWrapper;
+
+  .Catalog {
+    display: flex;
+
+    .Wrapper {
+      flex: 1;
+
+      .CatalogList {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+
+      .Loading {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.Empty {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+  font-size: 20px;
+}

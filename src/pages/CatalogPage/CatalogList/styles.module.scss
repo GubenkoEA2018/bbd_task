@@ -1,0 +1,17 @@
+@import '../../../css/variables';
+
+.Wrapper {
+  margin-left: 40px;
+  flex: 1;
+
+  .CatalogList {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .Loading {
+    width: 100%;
+    text-align: center;
+  }
+}

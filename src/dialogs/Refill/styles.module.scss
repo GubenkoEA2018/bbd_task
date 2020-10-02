@@ -1,0 +1,26 @@
+@import '../../css/variables.scss';
+
+.ButtonsWrapper {
+  @include flexCentered;
+  margin-top: 10px;
+  width: 100%;
+  .ButtonWrapper {
+    width: 265px;
+  }
+}
+
+.Title {
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+  margin: 20px 0 20px 0;
+}
+
+.InputWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .Input {
+    width: 90%;
+  }
+}

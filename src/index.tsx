@@ -12,14 +12,16 @@ import 'react-phone-input-2/lib/style.css';
 import 'react-toastify/dist/ReactToastify.css';
 
 // App
-import { App }   from './App';
+import { App } from './App';
 import { store } from './store/store';
 
+// Store
+
 ReactDOM.render(
-    <Provider store={store}>
-        <BrowserRouter>
-            <App />
-        </BrowserRouter>
-    </Provider>,
-    document.getElementById('root'),
+  <Provider store={store}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </Provider>,
+  document.getElementById('root'),
 );

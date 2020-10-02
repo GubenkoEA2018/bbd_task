@@ -1,0 +1,22 @@
+@import '../../../css/variables.scss';
+
+.Arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  g path {
+    fill: $darkRed;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.ArrowPrev {
+  left: 0;
+}
+
+.ArrowNext {
+  right: 0;
+}

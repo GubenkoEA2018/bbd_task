@@ -1,0 +1,72 @@
+@import '../../css/variables.scss';
+
+.Wrapper {
+  width: 755px;
+  height: 200px;
+  border-bottom: 1px solid $e6;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  .ImageWrapper {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .Image {
+      width: 100px;
+      height: 135px;
+      object-fit: contain;
+      cursor: pointer;
+    }
+  }
+
+  .ContentWrapper {
+    display: flex;
+    margin-left: 30px;
+
+    .ActionWrapper {
+      width: 315px;
+      min-width: 315px;
+      max-width: 315px;
+      .Name {
+        font-size: 16px;
+        line-height: 24px;
+        width: 100%;
+        cursor: pointer;
+        @include limitTextVertical;
+        &:hover {
+          color: $darkRed;
+        }
+      }
+    }
+
+    .Info {
+      margin-left: 55px;
+
+      .Price {
+        display: flex;
+        align-items: flex-end;
+        margin-top: 5px;
+        .Value {
+          font-weight: bold;
+          font-size: 18px;
+          &.ValueRed {
+            color: $darkRed;
+          }
+        }
+        .Sign {
+          margin-left: 5px;
+          font-size: 15px;
+        }
+      }
+      .Description {
+        margin-top: 5px;
+        line-height: 21px;
+
+        @include limitTextVertical;
+      }
+    }
+  }
+}

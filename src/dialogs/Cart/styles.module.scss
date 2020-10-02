@@ -1,0 +1,74 @@
+@import '../../css/variables';
+
+.Wrapper {
+  width: 640px;
+
+  .Title {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $darkBlue;
+  }
+
+  .Content {
+    margin-top: 35.54px;
+    margin-bottom: 21.46px;
+    @include flexCentered;
+
+    .ImageWrapper {
+      width: 100px;
+      height: 120px;
+      .Image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    .Description {
+      width: 227px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 21px;
+      color: $darkBlue;
+    }
+
+    .Price {
+      width: 90px;
+      font-weight: bold;
+      font-size: 16px;
+      color: $darkBlue;
+      text-align: right;
+    }
+
+    .Amount {
+      width: 140px;
+    }
+  }
+
+  .Total {
+    @include flexCentered;
+
+    hr {
+      color: $e1;
+      size: 1px;
+      width: 600px;
+    }
+
+    .TotalInfo {
+      margin-top: 15px;
+      font-weight: normal;
+      font-size: 16px;
+      color: $blueGray;
+    }
+  }
+
+  .ButtonsContent {
+    margin-top: 28px;
+    @include flexCentered;
+    .Buttons {
+      width: 287px;
+    }
+  }
+}

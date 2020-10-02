@@ -1,0 +1,27 @@
+@import '../../css/variables';
+
+.Wrapper {
+  //width: 566px;
+  height: 713px;
+
+  .Title {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $darkBlue;
+  }
+
+  .Content {
+    margin-top: 25.45px;
+    width: 510px;
+    text-align: justify-all;
+    .Text {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 21px;
+      color: $darkBlue;
+      margin-top: 0.5em;
+      margin-bottom: 1em;
+    }
+  }
+}

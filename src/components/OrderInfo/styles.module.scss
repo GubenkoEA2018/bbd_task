@@ -1,0 +1,77 @@
+@import '../../css/variables';
+
+.Info {
+  height: fit-content;
+  width: 360px;
+  background: #ffffff;
+  border: 1px solid #e6e7e8;
+  box-shadow: 0px 0px 10px rgba(31, 45, 81, 0.25);
+  border-radius: 2px;
+  font-size: 16px;
+
+  .Children {
+    border-bottom: 1px solid $e6;
+    padding: 25px 25px 0 25px;
+  }
+
+  .MainWrapper {
+    padding: 25px 25px 30px 25px;
+
+    .InfoRow {
+      width: 100%;
+      display: flex;
+      &:not(:first-of-type) {
+        margin-top: 15px;
+      }
+      .InfoCell {
+        display: flex;
+        align-items: center;
+      }
+      .InfoCell,
+      .InfoCellRight {
+        width: 50%;
+      }
+      .InfoCellRight {
+        text-align: right;
+      }
+      .InfoLabelPrice,
+      .InfoPrice {
+        font-weight: bold;
+      }
+      .InfoLabelPrice {
+        font-size: 16px;
+      }
+      .InfoPrice {
+        font-size: 24px;
+      }
+    }
+
+    .ButtonWrapper {
+      margin-top: 25px;
+    }
+
+    .ValidationMessage {
+      color: $darkRed;
+      font-size: 13px;
+      margin-top: 15px;
+      line-height: 20px;
+    }
+
+    .CheckboxWrapper {
+      margin-top: 20px;
+      display: flex;
+      position: relative;
+
+      .CheckboxLabel {
+        position: absolute;
+        top: 5px;
+        line-height: 20px;
+        left: 30px;
+      }
+      .CheckboxLabelRed {
+        color: $darkRed;
+        cursor: pointer;
+      }
+    }
+  }
+}

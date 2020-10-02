@@ -1,0 +1,21 @@
+@import '../../css/variables.scss';
+
+.InfoContent {
+  width: 100%;
+  color: $darkBlue;
+}
+
+.InfoContentTitle {
+  width: 159px;
+  height: 20px;
+  margin-bottom: 28px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.InfoContentText{
+  font-size: 14px;
+  line-height: 21px;
+}

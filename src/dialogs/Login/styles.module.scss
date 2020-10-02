@@ -1,0 +1,51 @@
+@import '../../css/variables';
+
+.Wrapper {
+  width: 360px;
+
+  .Title {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $darkBlue;
+  }
+
+  .Mt30 {
+    margin-top: 30px;
+  }
+
+  .Mt10 {
+    margin-top: 10px;
+  }
+
+  .FormGroupColumn {
+    .FormGroupColumnLabel {
+      color: $blueGray;
+      margin-bottom: 5px;
+      position: relative;
+      display: inline-block !important;
+      @include flexCentered;
+
+      &.FormRequired:after {
+        content: '*';
+        position: absolute;
+        right: -11px;
+        top: -3px;
+        color: $darkRed;
+        font-size: 18px;
+      }
+
+      .LabelRed {
+        color: $darkRed;
+      }
+    }
+
+    &:not(:first-of-type) {
+      margin-top: 15px;
+    }
+  }
+
+  .FormGroupColumnControl {
+    width: 100%;
+  }
+}

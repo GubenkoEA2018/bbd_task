@@ -1,0 +1,12 @@
+@import '../../css/variables';
+
+.TdUnderline {
+  text-decoration-line: underline;
+  &:hover {
+    color: $darkRed;
+  }
+}
+
+.PageTitle {
+  @include pageTitle;
+}
